@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  body {
+    line-height: 1.6;
+    background: #f9f9f9;
+    color: #333333;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background: white;
+  }
+  
+  .navbar a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333333;
+  }
+  
+   /* Hero */
+  .hero {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  }
+  
+  .hero span {
+    color: #007BFF;
+  }
+  
+  .btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #111111;
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Section */
+  .section {
+    padding: 80px 50px;
+    text-align: center;
+  }
+  
+  /* Grid */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .card {
+    background: white;
+    overflow: hidden;
+    transition: transform 0.3s;
+    border-radius: 16px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    max-width: 340px;
+    margin: 0 auto;
+  }
+  
+  .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+
+  /* 卡片下方文字區 */
+  .card-info {
+    padding: 18px 20px;
+    text-align: center;
+    background: white;
+  }
+  
+  .card-info h3 {
+    color: #333333;
+    margin-bottom: 6px;
+  }
+  
+  .card-info p {
+    color: #007BFF;
+    margin: 0;
+  }
+  
+  /* Form */
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+  }
+  
+  form input, form textarea {
+    margin: 10px 0;
+    padding: 10px;
+    background: white;
+    border: 1px solid #ddd;
+  }
+  
+  button {
+    padding: 10px;
+    background: #111111;
+    color: white;
+    border: none;
+  }
+  
+  /* Animation */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 0.8s;
+  }
+  
+  .fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* RWD */
+  @media(max-width: 768px) {
+    .grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .navbar {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  .card {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+
+  /* About Me 區塊優化版 */
+  .about-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+
+  .about-photo {
+    width: 420px;
+    height: 420px;
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+    flex-shrink: 0;
+  }
+
+  .about-content {
+    max-width: 480px;
+    text-align: left;
+    padding-top: 20px;
+  }
+
+  .contact-info {
+    margin-top: 30px;
+    padding: 25px;
+    background: #f8f9fa;
+    border-radius: 15px;
+    border-left: 5px solid #007BFF;
+  }
+
+  .contact-info h3 {
+    margin-top: 0;
+    margin-bottom: 18px;
+    color: #333;
+  }
+
+  .contact-info p {
+    margin: 10px 0;
+    color: #444;
+  }
+
+  /* My Projects 區塊間距調整 */
+  #projects {
+    padding-top: 80px;
+  }
+
+  #projects h2 {
+    margin-bottom: 100px !important;
+    color: #333333;
+  }
+
+  .project-detail {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+
+  .project-content {
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .project-image-container {
+    flex: 1;
+    min-width: 300px;
+  }
+
+  .project-image {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+  }
+
+  .project-info {
+    flex: 1;
+    min-width: 300px;
+    text-align: left;
+  }
+
+  .project-info h1 {
+    margin-top: 0;
+    font-size: 2.8rem;
+    color: #333333;
+  }
+
+  .category {
+    color: #007BFF;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+
+  .project-info h3 {
+    margin-top: 35px;
+    margin-bottom: 12px;
+    color: #333;
+  }
+
+  /* 手機版自動變上下排列 */
+  @media (max-width: 768px) {
+    .project-content {
+      flex-direction: column;
+      gap: 30px;
+    }
+  }
+
+  /* Back Button */
+  .back-btn {
+    color: #555555;
+    text-decoration: none;
+    font-size: 1.05rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .back-btn:hover {
+    color: #007BFF;
+    text-decoration: underline;
+  }

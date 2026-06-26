@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Minimal Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <div class="logo">
+        <h2>MyPortfolio</h2>
+    </div>
+    
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#style">Style</a>
+        <a href="projects.html">Projects</a>
+        <a href="index.html#contact">Contact</a>
+    </div>
+</nav>
+
+<!-- Hero -->
+<section id="home" class="hero fade-in">
+  <div>
+    <h2>Hi, I'm <span>xxx</span></h2>
+    <p>Creative Designer | UI/UX | Branding</p>
+    <a href="projects.html" class="btn">View My Work</a>
+  </div>
+</section>
+<!-- About -->
+<section id="about" class="section fade-in">
+  
+  <h2>About Me</h2>
+
+  <div class="about-container">
+    
+    <img loading="lazy" decoding="async" src="images/about.jpg" alt="BEN 照片" class="about-photo">
+
+    <div class="about-content">
+      <h3 class="about-heading">自我介紹</h3>
+      <p>
+        我是 xxx，一名專注於 UI/UX 與品牌設計的設計師。<br>
+        我喜歡打造簡潔、直覺且有轉換力的網站體驗。
+      </p>
+
+      <!-- 聯絡資訊放在 About Me 裡面 -->
+      <div class="contact-info">
+        <h3>聯絡資訊</h3>
+        <p><strong>Instagram：</strong> @ABC123</p>
+        <p><strong>電話：</strong> 09XX-XXX-XXX</p>
+        <p><strong>Email：</strong> your.email@example.com</p>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- My Style -->
+<section id="style" class="section fade-in">
+  <h2>My Style</h2>
+  <p class="section-intro">
+    以下是我擅長的三種設計風格，點擊可了解更多細節
+  </p>
+  
+  <div class="grid">
+
+    <a href="style1.html" class="card">
+      <img loading="lazy" decoding="async" src="images/style1.jpg" alt="復古風">
+      <div class="card-info">
+        <h3>1號風格</h3>
+        <p>Vintage / Retro</p>
+      </div>
+    </a>
+
+    <a href="style2.html" class="card">
+      <img loading="lazy" decoding="async" src="images/style-luxury.jpg" alt="清奢風">
+      <div class="card-info">
+        <h3>2號風格</h3>
+        <p>Clean Luxury</p>
+      </div>
+    </a>
+
+    <a href="style3.html" class="card">
+      <img loading="lazy" decoding="async" src="images/style3.jpg" alt="侘寂風">
+      <div class="card-info">
+        <h3>3號風格</h3>
+        <p>Wabi-Sabi / Japandi</p>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+
+
+<!-- Contact -->
+<section id="contact" class="section fade-in">
+  <h2>Contact Me</h2>
+  <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2026 Your Name</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
